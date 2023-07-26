@@ -1,3 +1,4 @@
 /dist/
+/core-js-amd-bundle/
 /node_modules/
 /package-lock.json

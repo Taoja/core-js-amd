@@ -4,18 +4,26 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "corejs": "rollup -c --environment corejs",
+    "build": "rollup -c --environment build",
+    "watch": "rollup -c --watch --environment build"
   },
   "type": "module",
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@rollup/plugin-commonjs": "^25.0.3",
+    "@rollup/plugin-json": "^6.0.0",
+    "@rollup/plugin-multi-entry": "^6.0.0",
     "@rollup/plugin-node-resolve": "^15.1.0",
+    "@rollup/plugin-terser": "^0.4.3",
+    "browserslist-ua-parser": "^1.0.1",
     "core-js": "^3.31.1",
+    "core-js-compat": "^3.31.1",
     "glob": "^10.3.3",
     "rollup": "^3.26.3",
     "rollup-plugin-delete": "^2.0.0",
-    "rollup-plugin-gzip": "^3.1.0"
+    "rollup-plugin-gzip": "^3.1.0",
+    "rollup-plugin-polyfill-node": "^0.12.0"
   }
 }
